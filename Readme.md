@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Денис Пуховский](https://up.htmlacademy.ru/htmlcss/20/user/478669).
-* Наставник: [Полина Катышева] (https://htmlacademy.ru/profile/polina).
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
