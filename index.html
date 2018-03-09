@@ -9,7 +9,11 @@
       <div class="header-logo">
         <p>device</p>
       </div>
-      <input type="text" class="mail-header-search" placeholder="Поиск по сайту">
+      <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+        <input type="text" class="mail-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
+        <button type="submit" class="button search-button">Найти</button>
+      </form>
       <a class="main-header-login" href="#">Войти</a>
       <a class="main-header-compare" href="#">Сравнить</a>
       <a class="main-header-cart" href="#">Корзина</a>
@@ -37,9 +41,9 @@
       <section class="slider">
         <h2 class="visually-hidden">Слайдер товаров</h2>
         <ul class="slider-nav">
-          <li class="dot active"><span></span></li>
-          <li class="dot"><span></span></li>
-          <li class="dot"><span></span></li>
+          <li class="dot active"><button class="sliber-button">Слайд 1</button></li>
+          <li class="dot"><button class="sliber-button">Слайд 2</button></li>
+          <li class="dot"><button class="sliber-button">Слайд 3</button></li>
         </ul>
         <ul class="slider-list">
           <li class="slider-item">
@@ -209,12 +213,21 @@
     </footer>
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <div class="temp-form-wrapper">
-      </div>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="write-us-label" for="write-us-name">Ваше имя:</label>
+        <input type="text" class="write-as-input" name="name" id="write-us-name" placeholder="Имя Фамилия">
+        <label class="write-us-label" for="write-us-email">Ваш e-mail:</label>
+        <input type="email" class="write-as-input" name="email" id="write-us-email" placeholder="email@example.com">
+        <label class="write-us-label" for="write-us-text">Текст письма:</label>
+        <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-big.jpg" alt="карта" width="950" height="559">
+      <img src="img/map-big.jpg" alt="Улица строителей, 15" width="950" height="559">
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
