@@ -57,12 +57,13 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-group">
             <legend>Стоимость</legend>
-            <input class="filter-input-range" type="range" name="min" id="filter-min-price" min="0" max="5000" step="1">
-            <label class="visually-hidden" for="filter-min-price">минимальная цена</label>
-            <input class="filter-input-range" type="range" name="max" id="filter-max-price" min="0" max="5000" step="1">
-            <label class="visually-hidden" for="filter-max-price">максимальная цена</label>
-            <p class="min-price-value">От 0</p>
-            <p class="max-price-value">До 5000</p>
+            <div class="filter-price-range">
+              <span class="filter-price-range-green-line"></span>
+              <span class="filter-price-range-grey-line"></span>
+              <p class="min-price-value">От 0</p>
+              <p class="max-price-value">До 5000</p>
+            </div>
+
           </fieldset>
           <fieldset class="filter-group">
             <legend>Цвет</legend>
@@ -120,8 +121,8 @@
             </li>
           </ul>
           <ul class="catalog-sort-buttons">
-            <li><button class="sort-up">по возрастанию</button></li>
-            <li><button class="sort-down">по убыванию</button></li>
+            <li><button type="button" class="sort-up">по возрастанию</button></li>
+            <li><button type="button" class="sort-down">по убыванию</button></li>
           </ul>
         </div>
         <div class="products">
@@ -230,12 +231,12 @@
           <textarea class="write-as-textarea" name="text" id="write-us-text" placeholder="В свободной форме"></textarea>
           <button type="submit" class="button">Отправить</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button type="button" class="modal-close" >Закрыть</button>
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Карта</h2>
         <img src="img/map-big.jpg" alt="Улица строителей, 15" width="950" height="559">
-        <button class="modal-close" type="button">Закрыть</button>
+        <button type="button" class="modal-close" >Закрыть</button>
       </section>
   </body>
 </html>
