@@ -62,10 +62,10 @@
             <div class="filter-price-range">
               <span class="filter-price-range-green-line"></span>
               <span class="filter-price-range-grey-line"></span>
-              <label for="filter-min-price">От</label>
-              <input class="min-price-value" type="text" name="min-price" id="filter-min-price" value="0">
-              <label for="filter-max-price">До</label>
-              <input class="max-price-value" type="text" name="max-price" id="filter-max-price" value="5000">
+              <label class="price-label" for="filter-min-price">От</label>
+              <input class="price-value" type="text" name="min-price" id="filter-min-price" value="0">
+              <label class="price-label" for="filter-max-price">До</label>
+              <input class="price-value" type="text" name="max-price" id="filter-max-price" value="5000">
             </div>
 
           </fieldset>
@@ -112,9 +112,9 @@
       </aside>
       <section class="catalog">
         <div class="catalog-sort">
-          <p>сортировка:</p>
+          <h2>сортировка:</h2>
           <ul class="catalog-sort-links">
-            <li class="catalog-sort-item">
+            <li class="catalog-sort-item current-sort">
               <a href="#">По цене</a>
             </li>
             <li class="catalog-sort-item">
@@ -136,8 +136,8 @@
               <a href="#">Любительская селфи палка</a>
               <p class="product-price">500 руб</p>
               <div class="hover-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                <button type="button" class="add-to-cart button">В корзину</button>
+                <button type="button" class="add-to-compare">Добавить к сравнению</button>
               </div>
             </li>
             <li class="product">
@@ -145,8 +145,8 @@
               <a href="#">Профессиональная селфи палка</a>
               <p class="product-price">1500 руб</p>
               <div class="hover-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                <button type="button" class="add-to-cart button">В корзину</button>
+                <button type="button" class="add-to-compare">Добавить к сравнению</button>
               </div>
             </li>
             <li class="product">
@@ -154,8 +154,8 @@
               <a href="#">Непотопляемая селфи палка</a>
               <p class="product-price">2500 руб</p>
               <div class="hover-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                <button type="button" class="add-to-cart button">В корзину</button>
+                <button type="button" class="add-to-compare">Добавить к сравнению</button>
               </div>
             </li>
             <li class="product">
@@ -163,8 +163,8 @@
               <a href="#">Селфи-палка 'Следуй за мной'</a>
               <p class="product-price">4900 руб</p>
               <div class="hover-links">
-                <a href="#" class="add-to-cart">Добавить в корзину</a>
-                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+                <button type="button" class="add-to-cart button">В корзину</button>
+                <button type="button" class="add-to-compare">Добавить к сравнению</button>
               </div>
             </li>
           </ul>
@@ -174,14 +174,14 @@
             <li>
               <a href="#" class="catalog-nav-button">назад</a>
             </li>
-            <li class="pagination-list-item">
+            <li class="pagination-list-item current-page">
               <a href="#">1</a>
             </li>
             <li class="pagination-list-item">
               <a href="#">2</a>
             </li>
             <li class="pagination-list-item">
-              <a href="#">1</a>
+              <a href="#">3</a>
             </li>
             <li>
               <a href="#" class="catalog-nav-button">вперед</a>
@@ -192,7 +192,7 @@
     </main>
     <footer class="main-footer">
         <div class="footer-address">
-          <div class="footer-logo">
+          <div class="logo footer-logo">
             <a href="index.html">device</a>
           </div>
           <p>г. Москва, ул. Строителей, 15</p>
@@ -222,7 +222,7 @@
         <div class="footer-phone">
           <p>Тел.: +7 (495) 495-95-95</p>
         </div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="http://placehold.it/40x30" alt="лого академии"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="img/logo-html.svg" alt="лого академии"></a>
       </footer>
       <section class="modal modal-write-us">
         <h2 class="visually-hidden">Форма обратной связи</h2>

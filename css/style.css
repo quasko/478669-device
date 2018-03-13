@@ -46,8 +46,20 @@ a {
   line-height: 24px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
 }
+
+.button:hover,
+.button:focus {
+  background-image: none;
+  background-color: #f0c52e;
+  color: #000000;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 .main-header {
   background-color: #f7e296;
 }
@@ -58,9 +70,6 @@ a {
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
-}
-
-.header-logo a {
   color: #000000;
 }
 
@@ -291,10 +300,10 @@ a {
   background-image: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 30%,
-    #f0c52e 30%,
-    #f0c52e 70%,
-    transparent 70%,
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%,
     transparent 100%
     );
 }
@@ -330,39 +339,41 @@ a {
   list-style:none;
 }
 
-.brand-logo-container {
+
+
+.brand a{
+  display: block;
   width: 260px;
   height: 100px;
 }
-
-.brand-1 div {
+.brand-1 {
   background-image: url("../img/logo-1-grey.png");
 }
-.brand-1:hover div {
+.brand-1:hover {
   background-image: url("../img/logo-1-hover.png");
 }
 
-.brand-2 div {
+.brand-2 {
   background-image: url("../img/logo-2-grey.png");
 }
-.brand-2:hover div {
+.brand-2:hover {
   background-image: url("../img/logo-2-hover.png");
 }
 
-.brand-3 div {
+.brand-3 {
   background-image: url("../img/logo-3-grey.png");
 }
-.brand-3:hover div {
+.brand-3:hover {
   background-image: url("../img/logo-3-hover.png");
 }
 
-.brand-4 div {
+.brand-4 {
   background-image: url("../img/logo-4-grey.png");
 }
-.brand-4:hover div {
+.brand-4:hover {
   background-image: url("../img/logo-4-hover.png");
 }
-
+*/
 .about-us-header,
 .contacts-header {
   font-family: "Gilroy", Arial, sans-serif;
@@ -390,16 +401,17 @@ a {
   letter-spacing: 0;
 }
 
-.footer-logo p{
+.footer-logo p,
+.footer-logo a{
   color: #ffc600;
 }
 
-.footer-logo p:hover,
-.footer-logo p:focus {
+.footer-logo a:hover,
+.footer-logo a:focus {
   color: rgba(255, 198, 0, 0.6);
 }
 
-.footer-logo p:active {
+.footer-logo a:active {
   color: rgba(255, 198, 0, 0.3);
 }
 
@@ -449,8 +461,8 @@ a {
   color: #ffffff;
 }
 
-.footer-address p,
-.footer-phone p {
+.footer-address,
+.footer-phone {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -471,10 +483,10 @@ a {
   background-image: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 30%,
-    #f0c52e 30%,
-    #f0c52e 70%,
-    transparent 70%,
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%,
     transparent 100%
     );
 }
@@ -604,6 +616,10 @@ a {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.left-side {
+  background-color: #eeeeee;
+}
+
 .left-side h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -649,10 +665,149 @@ a {
   background-image: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 30%,
-    #f0c52e 30%,
-    #f0c52e 70%,
-    transparent 70%,
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%,
     transparent 100%
     );
 }
+
+.price-label,
+.price-value {
+  border: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+
+.catalog-sort {
+  background-color: #ebebeb;
+}
+
+.catalog-sort h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+.catalog-sort-links {
+  list-style: none;
+}
+
+.catalog-sort-item a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.catalog-sort-item.current-sort a,
+.catalog-sort-item a:active {
+  color: #000000;
+}
+
+.catalog-sort-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.products-list {
+  list-style: none;
+}
+
+.product>a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.product-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #464646;
+}
+
+.add-to-cart {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%,
+    transparent 100%
+    );
+}
+
+.add-to-compare {
+  border: none;
+  background-color: transparent;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.add-to-compare:hover,
+.add-to-compare:focus {
+  color: #000000;
+}
+
+.add-to-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-nav {
+  background-color: #ebebeb;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.pagination-list-item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-list-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-list-item a:active {
+  color: #000000;
+}
+
+.pagination-list-item.current-page a {
+  color: #000000;
+}
+
+.catalog-nav-button {
+  color: #000000;
+}
+
+.catalog-nav-button:hover,
+.catalog-nav-button:focus {
+  background-color: #d9d9d9;
+}
+
+.catalog-nav-button:active,
