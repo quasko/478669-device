@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-logo">
+      <div class="logo header-logo">
         <a href="index.html">device</a>
       </div>
       <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
@@ -16,10 +16,10 @@
         <input type="text" class="main-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
         <button type="submit" class="button search-button">Найти</button>
       </form>
-      <a class="main-header-account" href="#">Валентин Петухов</a>
-      <a class="main-header-logout" href="#">Выйти</a>
-      <a class="main-header-compare" href="#">Сравнить</a>
-      <a class="main-header-cart" href="#">Корзина</a>
+      <a class="main-header-user-link main-header-account" href="#">Валентин Петухов</a>
+      <a class="main-header-user-link main-header-logout" href="#">Выйти</a>
+      <a class="main-header-user-link main-header-compare" href="#">Сравнить</a>
+      <a class="main-header-user-link main-header-cart" href="#">Корзина</a>
       <nav class="main-header-navigation">
         <ul class="main-header-menu">
           <li class="main-header-menu-item">
@@ -41,7 +41,7 @@
     </header>
     <main class="main-container">
       <div class="crumbs">
-        <h1 class="main-header">Моноподы для селфи</h1>
+        <h1 class="main-title">Моноподы для селфи</h1>
           <ul class="crumbs-list">
             <li class="crumbs-item">
               <a href="index.html">Главная</a>
@@ -73,7 +73,7 @@
             <legend>Цвет</legend>
             <ul class="color-list">
               <li class="color-list-item">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                <input disabled class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
                 <label for="filter-black">Черный</label>
               </li>
               <li class="color-list-item">
