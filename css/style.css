@@ -810,4 +810,7 @@ a {
   background-color: #d9d9d9;
 }
 
-.catalog-nav-button:active,
+.catalog-nav-button:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
