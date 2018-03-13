@@ -509,17 +509,18 @@ a {
 
 .write-us-form input,
 .write-us-form textarea {
-  border: none;
+
   background-color: #f2f2f2;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
   letter-spacing: 0;
 }
 
 .write-us-form input:hover,
 .write-us-form textarea:hover {
-  border: none;
+
   background-color: #ebebeb;
 
 }
@@ -814,3 +815,12 @@ a {
   background-color: #d9d9d9;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.main-header-search,
+.write-as-input,
+.write-as-textarea {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+
