@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="header-logo">
+      <div class="logo header-logo">
         <p>device</p>
       </div>
       <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-        <input type="text" class="mail-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
+        <input type="text" class="main-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
         <button type="submit" class="button search-button">Найти</button>
       </form>
-      <a class="main-header-login" href="#">Войти</a>
-      <a class="main-header-compare" href="#">Сравнить</a>
-      <a class="main-header-cart" href="#">Корзина</a>
+      <a class="main-header-user-link main-header-login" href="#">Войти</a>
+      <a class="main-header-user-link main-header-compare" href="#">Сравнить</a>
+      <a class="main-header-user-link main-header-cart" href="#">Корзина</a>
       <nav class="main-header-navigation">
         <ul class="main-header-menu">
           <li class="main-header-menu-item">
@@ -100,35 +102,47 @@
         <h2 class="visually-hidden">Категории</h2>
         <ul class="categories-list">
           <li class="categories-item">
-            <img src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность">
-            <a class="categories-item-link" href="#">Виртуальная реальность</a>
+            <a class="categories-item-link" href="#">
+                <img src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность">
+                <p>Виртуальная реальность</p>
+            </a>
           </li>
           <li class="categories-item">
-            <img src="img/popular-2.svg" width="160" height="160" alt="Моноподы для селфи">
-            <a class="categories-item-link" href="catalog.html">Моноподы для селфи</a>
+            <a class="categories-item-link" href="catalog.html">
+                <img src="img/popular-2.svg" width="160" height="160" alt="Моноподы для селфи">
+                <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li class="categories-item">
-            <img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камеры">
-            <a class="categories-item-link" href="#">Экшн-камеры</a>
+            <a class="categories-item-link" href="#">
+                <img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камеры">
+                <p>Экшн-камеры</p>
+            </a>
           </li>
           <li class="categories-item">
-            <img src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслеты">
-            <a class="categories-item-link" href="#">Фитнес-браслеты</a>
+            <a class="categories-item-link" href="#">
+                <img src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслеты">
+                <p>Фитнес-браслеты</p>
+            </a>
           </li>
           <li class="categories-item">
-            <img src="img/popular-5.svg" width="160" height="160" alt="Умные часы">
-            <a class="categories-item-link" href="#">Умные часы</a>
+            <a class="categories-item-link" href="#">
+              <img src="img/popular-5.svg" width="160" height="160" alt="Умные часы">
+              <p>Умные часы</p>
+            </a>
           </li>
           <li class="categories-item">
-            <img src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры">
-            <a class="categories-item-link" href="#">Квадрокоптеры</a>
+            <a class="categories-item-link" href="#">
+              <img src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры">
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-nav">
-          <li class="services-tab">
+          <li class="services-tab current-tab">
             <a class="services-link" id="delivery-link" href="#">Доставка</a>
           </li>
           <li class="services-tab">
@@ -156,10 +170,26 @@
       <section class="brands">
         <h2 class="visually-hidden">Бренды</h2>
         <ul class="brands-list">
-          <li class="brand brand-1"><a href="#">dji</a></li>
-          <li class="brand brand-2"><a href="#">spGadgets</a></li>
-          <li class="brand brand-3"><a href="#">GoPro</a></li>
-          <li class="brand brand-4"><a href="#">vive</a></li>
+          <li class="brand">
+            <a href="#" class="brand-1" aria-label="brand dji link">
+              <div class="brand-logo-container"></div>
+            </a>
+          </li>
+          <li class="brand">
+            <a href="#" class="brand-2" aria-label="brand spGadgets link">
+              <div class="brand-logo-container"></div>
+            </a>
+          </li>
+          <li class="brand">
+            <a href="#" class="brand-3" aria-label="brand GoPro link">
+              <div class="brand-logo-container"></div>
+            </a>
+          </li>
+          <li class="brand">
+            <a href="#" class="brand-4" aria-label="brand vive link">
+              <div class="brand-logo-container"></div>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="about-us">
@@ -182,7 +212,9 @@
     </main>
     <footer class="main-footer">
       <div class="footer-address">
-        <p class="footer-device">device</p>
+        <div class="logo footer-logo">
+          <p>device</p>
+        </div>
         <p>г. Москва, ул. Строителей, 15</p>
       </div>
       <div class="footer-menu">
@@ -209,7 +241,7 @@
       <div class="footer-phone">
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="http://placehold.it/40x30" alt="лого академии"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy-logo" title="Интенсивный онлайн-курс «HTML и CSS, уровень 1» — HTML Academy"><img src="img/logo-html.svg" alt="лого академии"></a>
     </footer>
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>

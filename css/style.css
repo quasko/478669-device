@@ -1,0 +1,571 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url('../fonts/gilroylight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/opensanslight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/opensans.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+
+}
+.main-header {
+  background-color: #f7e296;
+}
+
+.logo p{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.header-logo p{
+  color: #000000;
+}
+
+.header-logo p:hover,
+.header-logo p:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-logo p:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+.main-header-search {
+  border: none;
+}
+
+.main-header-search::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header-search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+.main-header-search:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+.main-header-search:hover::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-header-search:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-header-search:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-search:focus {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.main-header-user-link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.main-header-user-link:hover,
+.main-header-user-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-user-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header-menu,
+.catalog-menu {
+  list-style: none;
+}
+
+.main-header-menu-item>a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-header-menu-item>a:hover,
+.main-header-menu-item>a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-menu-item>a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-menu-item a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+.catalog-menu-item a:hover,
+.catalog-menu-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-menu-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-nav,
+.slider-list {
+  list-style: none;
+}
+
+
+.slider-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+.slider-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.more-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    #f0c52e 30%,
+    #f0c52e 70%,
+    transparent 70%,
+    transparent 100%
+    );
+}
+
+.more-link:hover,
+.more-link:focus {
+  background-image: none;
+  background-color: #f0c52e;
+
+}
+
+.more-link:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-image: none;
+  background-color: #f0c52e;
+
+}
+
+.parameters tr:first-child {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.parameters tr:last-child {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.categories-item-link  {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.categories-item-link img {
+  background-color: #f7e296;
+}
+
+.categories-item-link img:hover,
+.categories-item-link img:focus {
+  background-color: #f0c52e;
+
+}
+
+.categories-item-link:active {
+  background-color: #f0c52e;
+  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3)
+}
+.services {
+  background-color: #e5e5e5;
+}
+.services-nav {
+  list-style: none;
+}
+
+.services-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    #f0c52e 30%,
+    #f0c52e 70%,
+    transparent 70%,
+    transparent 100%
+    );
+}
+
+.services-link:hover,
+.services-link:focus {
+  background-image: none;
+  background-color: #f0c52e;
+  color: #000000;
+}
+
+.services-link:active,
+.current-tab a {
+  background-image: none;
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.services-item-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.services-item-description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.brands-list {
+  list-style:none;
+}
+
+.brand-logo-container {
+  width: 260px;
+  height: 100px;
+}
+
+.brand-1 div {
+  background-image: url("../img/logo-1-grey.png");
+}
+.brand-1:hover div {
+  background-image: url("../img/logo-1-hover.png");
+}
+
+.brand-2 div {
+  background-image: url("../img/logo-2-grey.png");
+}
+.brand-2:hover div {
+  background-image: url("../img/logo-2-hover.png");
+}
+
+.brand-3 div {
+  background-image: url("../img/logo-3-grey.png");
+}
+.brand-3:hover div {
+  background-image: url("../img/logo-3-hover.png");
+}
+
+.brand-4 div {
+  background-image: url("../img/logo-4-grey.png");
+}
+.brand-4:hover div {
+  background-image: url("../img/logo-4-hover.png");
+}
+
+.about-us-header,
+.contacts-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.about-us-text,
+.contacts-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.delivery-services-list {
+  list-style: none;
+}
+
+.delivery-service {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.footer-logo p{
+  color: #ffc600;
+}
+
+.footer-logo p:hover,
+.footer-logo p:focus {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo p:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-links-item a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links-item a:hover,
+.footer-links-item a:focus {
+  color: #ffffff;
+}
+
+.footer-links-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-menu-item a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+}
+
+.footer-menu-item a:hover,
+.footer-menu-item a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-menu-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-address p,
+.footer-phone p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.footer-academy-logo:hover img,
+.footer-academy-logo:focus img {
+  opacity: 0.6;
+}
+
+.footer-academy-logo:active img {
+  opacity: 0.3;
+}
+
+.write-us-form button {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    #f0c52e 30%,
+    #f0c52e 70%,
+    transparent 70%,
+    transparent 100%
+    );
+}
+
+.write-us-form button:hover,
+.write-us-form button:focus {
+  background-image: none;
+  background-color: #f0c52e;
+  color: #000000;
+}
+
+.write-us-form label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  border: none;
+  background-color: #ebebeb;
+
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  border: 2px solid #f7e296;
+  color: #464646;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.write-us-form input:invalid {
+  background-color: #f6dada;
+}
+
+.write-us-form input::-moz-placeholder,
+.write-us-form textarea::-moz-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: rgba(70, 70, 70, 0.4);
+
+}
+.write-us-form input::-webkit-input-placeholder,
+.write-us-form textarea::-webkit-input-placeholder {
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: rgba(70, 70, 70, 0.4);
+
+}
+.write-us-form input:-ms-input-placeholder,
+.write-us-form textarea:-ms-input-placeholder {
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: rgba(70, 70, 70, 0.4);
+
+}
+
+
+
+.main-header-search {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header-search {
+  color: rgba(0, 0, 0, 0.3);
+
+}
+.main-header-search {
+  color: rgba(0, 0, 0, 0.3);
+
+}
