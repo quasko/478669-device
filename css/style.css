@@ -40,6 +40,15 @@ a {
   letter-spacing: 0.01em;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
 .button {
   background-color: transparent;
   border: none;
@@ -823,9 +832,123 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header-search,
+
 .write-as-input,
 .write-as-textarea {
   outline: none;
   border: 2px solid transparent;
+}
+
+
+/*стили для сеток*/
+
+body {
+
+
+  background-color: #000000;
+
+}
+
+.main-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding-top: 40px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 0 60px;
+  min-height: 300px;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+}
+
+.main-header-search {
+  padding: 0;
+  margin: 0;
+  width: 357px;
+}
+
+
+.main-header-login {
+  margin-left: 100px;
+}
+
+.main-header-compare {
+  margin-left: auto;
+}
+
+.catalog-menu {
+  display: none;
+}
+
+.main-header-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.main-header-menu li:first-child {
+  margin-right: 300px;
+}
+
+.main-header-menu li:last-child {
+  margin-left: auto;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item{
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.slider-item-left {
+  width: 50%;
+}
+
+.slider-item-right {
+  width: 50%;
+}
+
+.categories-list {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-item-link p{
+  white-space: normal;
+}
+
+.services .container {
+  display: flex;
+}
+
+.services-nav {
+  padding: 0;
+  margin: 0;
+  width: 280px;
 }
