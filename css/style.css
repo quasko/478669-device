@@ -872,7 +872,7 @@ body {
 
 .main-header-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 50px;
 
 }
@@ -931,6 +931,10 @@ body {
   width: 50%;
 }
 
+.categories {
+  margin-bottom: 80px;
+}
+
 .categories-list {
   padding: 0;
   margin: 0;
@@ -943,12 +947,144 @@ body {
   white-space: normal;
 }
 
+
+.services {
+  margin-bottom: 100px;
+}
 .services .container {
   display: flex;
+  min-height: 320px;
 }
 
 .services-nav {
   padding: 0;
   margin: 0;
   width: 280px;
+}
+
+/*скрытые вкладки*/
+
+.services-description-warranty,
+.services-description-credit {
+  display: none;
+}
+
+
+.services-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.services-nav li {
+  margin: 10px 0;
+}
+
+.brands-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.about-section.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.about-section.container section {
+  width: 560px;
+}
+
+.main-footer {
+  padding-top: 65px;
+}
+.main-footer ul {
+  padding: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper-center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links-list {
+
+  display: flex;
+}
+
+.footer-menu {
+  margin: 0 auto;
+}
+
+.footer-menu-list {
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+
+}
+
+.footer-address {
+  width: 250px;
+  text-align: left;
+}
+
+.footer-phone {
+  width: 250px;
+  text-align: right;
+}
+
+.footer-social {
+  margin: 0 auto;
+}
+
+.footer-social ul {
+  display: flex;
+}
+
+.footer-decoration-line {
+  width: 80px;
+}
+
+.footer-academy-logo {
+  width: 80px;
+}
+
+.modal-write-us {
+  width: 760px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+
+}
+
+.write-us-form input,
+.write-us-form label {
+  display: block;
+  width: 360px;
+}
+
+.write-as-textarea {
+  width: 760px;
+}
+
+.form-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-map {
+  width: 960px;
+  height: 560px;
 }
