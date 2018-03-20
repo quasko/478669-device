@@ -51,22 +51,23 @@
         <h1 class="visually-hidden">Главная Device</h1>
         <section class="slider">
           <h2 class="visually-hidden">Слайдер товаров</h2>
-          <ul class="slider-nav">
-            <li class="dot active"><button type="button" class="slider-button">Слайд 1</button></li>
-            <li class="dot"><button type="button" class="slider-button">Слайд 2</button></li>
-            <li class="dot"><button type="button" class="slider-button">Слайд 3</button></li>
-          </ul>
 
+          <input class="visually-hidden" type="radio" id="slide-1" name="active-slider" checked>
+          <input class="visually-hidden" type="radio" id="slide-2" name="active-slider">
+          <input class="visually-hidden" type="radio" id="slide-3" name="active-slider">
+          <ul class="slider-nav">
+            <li class="dot active"><label class="dot-1" for="slide-1">Первый</label></li>
+            <li class="dot"><label class="dot-2" for="slide-2">Второй</label></li>
+            <li class="dot"><label class="dot-2" for="slide-3">Третий</label></li>
+          </ul>
           <div class="container">
             <ul class="slider-list">
-
                 <li class="slider-item">
-
                   <div class="slider-item-left">
                     <img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
                   </div>
                   <div class="slider-item-right">
-                    <p class="slider-title">Делай селфи, как Бен Стиллер!</p>
+                    <p class="slider-title">Делай селфи,<br> как Бен Стиллер!</p>
                     <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                     <a class="slider-link more-link" href="#">Подробнее</a>
                     <table class="parameters">
@@ -75,7 +76,7 @@
                         <td>5 кг</td>
                         <td>Карбон</td>
                       </tr>
-                      <tr>
+                      <tr class="parameters-name">
                         <td>Длина палки</td>
                         <td>Вес палки</td>
                         <td>Материал</td>
@@ -89,14 +90,14 @@
                   <img src="img/slider-2.png" alt="Мотивирующие фитнес-браслеты" width="345" height="485">
                 </div>
                 <div class="slider-item-right">
-                  <p class="slider-title">Худеем правильно!</p>
+                  <p class="slider-title">Худеем<br> правильно!</p>
                   <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                   <a class="slider-link more-link" href="#">Подробнее</a>
                   <table class="parameters">
                     <tr>
                       <td>48 часов</td>
                     </tr>
-                    <tr>
+                    <tr class="parameters-name">
                       <td>Без подзарядки</td>
                     </tr>
                   </table>
@@ -107,6 +108,7 @@
                   <img src="img/slider-3.png" alt="квадрокоптер" width="526" height="334">
                 </div>
                 <div class="slider-item-right">
+                  <span class="background-number">03</span>
                   <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
                   <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <a class="slider-link more-link" href="#">Подробнее</a>
@@ -115,7 +117,7 @@
                       <td>800 м</td>
                       <td>50 м</td>
                     </tr>
-                    <tr>
+                    <tr class="parameters-name">
                       <td>Дальность полета</td>
                       <td>Радиус поражения</td>
                     </tr>
