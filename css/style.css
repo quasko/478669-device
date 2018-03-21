@@ -310,6 +310,21 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-header-menu-item:first-child a {
+  position: relative;
+}
+
+.main-header-menu-item:first-child a::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  right: -27px;
+  background-image: url("../img/plus.svg");
+  opacity: 0.3;
+}
+
 .catalog-menu-item a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -1082,7 +1097,7 @@ a.footer-login::before {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
-  color: #000000;
+  position: relative;
 }
 
 .crumbs-item a:hover,
@@ -1092,6 +1107,20 @@ a.footer-login::before {
 
 .crumbs-item a:active {
   color: rgba(0, 0, 0, 0.1);
+}
+
+.crumbs-item:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  top: 6px;
+  right: -20px;
+  border-radius: 50px 0 0 0;
+  transform: rotate(-45deg) scale(0.73);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .left-side {
@@ -1777,7 +1806,7 @@ a.footer-login::before {
 }
 
 .crumbs-list li {
-  margin-right: 40px;
+  margin-right: 37px;
 }
 
 .catalog-header .container {
