@@ -1346,15 +1346,19 @@ a.footer-login::before {
 .hover-links {
   display: none;
 }
-.product img:hover {
-  opacity: 0.7;
+.image-hover-wrapper {
   position: relative;
 }
 
-.product img:hover ~ .hover-links {
+.image-hover-wrapper:hover img{
+  opacity: 0.7;
+}
+
+.image-hover-wrapper:hover .hover-links {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 177px;
+  left: 80px;
   width: 200px;
 }
 
@@ -1367,15 +1371,8 @@ a.footer-login::before {
 }
 
 .add-to-cart {
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 40%,
-    #f0c52e 40%,
-    #f0c52e 60%,
-    transparent 60%,
-    transparent 100%
-    );
+  width: 200px;
+  margin-bottom: 20px;
 }
 
 .add-to-compare {
@@ -1385,6 +1382,8 @@ a.footer-login::before {
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 200px;
 }
 
 .add-to-compare:hover,
