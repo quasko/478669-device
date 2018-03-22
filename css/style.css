@@ -77,8 +77,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   left: 0;
   z-index:-1;
-  transition: all 0.3s;
-  transition: color 0;
+  transition: height 0.3s;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -91,8 +90,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   left: 0;
   z-index:-1;
-  transition: all 0.3s;
-  transition: color 0;
+  transition: height 0.3s;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -169,10 +167,6 @@ input[type="radio"].visually-hidden {
 
 .main-header-search:focus + .search-button {
   visibility: visible;
-}
-
-.main-header-search[value=""] {
-  background-color: green;
 }
 
 .search-button {
@@ -438,8 +432,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   left: 0;
   z-index:-1;
-  transition: all 0.3s;
-  transition: color 0;
+  transition: height 0.3s;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -452,8 +445,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   left: 0;
   z-index:-1;
-  transition: all 0.3s;
-  transition: color 0;
+  transition: height 0.3s;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -606,6 +598,9 @@ input[type="radio"].visually-hidden {
   top: 15px;
   left: 0;
   z-index:-1;
+  transition: height 0.3s;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .services-tab:not(.current) .services-link:not(:active):hover::after {
@@ -617,7 +612,9 @@ input[type="radio"].visually-hidden {
   top: 0px;
   left: 0;
   z-index:-1;
-  transition: all 0.3s;
+  transition: height 0.3s;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .services-tab .services-link:active::after,
