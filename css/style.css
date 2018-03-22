@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -161,7 +161,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-search:focus {
   color: #000000;
-  border-bottom: 2px solid #000000;
+  border-bottom-color: #000000;
   outline: none;
 }
 
@@ -429,7 +429,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width:100%;
   background-color: #f0c52e;
-  height: 10px;
+  height: 8px;
   left: 0;
   z-index:-1;
   transition: height 0.3s;
@@ -594,8 +594,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width:100%;
   background-color: #f0c52e;
-  height: 10px;
-  top: 15px;
+  height: 8px;
   left: 0;
   z-index:-1;
   transition: height 0.3s;
@@ -609,7 +608,6 @@ input[type="radio"].visually-hidden {
   width:100%;
   background-color: #f0c52e;
   height: 40px;
-  top: 0px;
   left: 0;
   z-index:-1;
   transition: height 0.3s;
@@ -1354,6 +1352,7 @@ a.footer-login::before {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -11px;
+  width: 780px; /*IE11*/
 }
 
 .product {
