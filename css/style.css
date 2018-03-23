@@ -34,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   letter-spacing: 0.01em;
+  min-width: 1200px;
 }
 
 a {
@@ -1061,6 +1062,10 @@ input[type="radio"].visually-hidden {
   background-position: 50% 50%;
 }
 
+.footer-links-item .footer-account::before {
+  left: -5px;
+}
+
 .footer-links-item a:hover::before {
   opacity: 0.6;
 }
@@ -1455,7 +1460,7 @@ a.footer-login::before {
 
 .price-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #dbdbdb;
 }
 
 .price-controls .bar {
