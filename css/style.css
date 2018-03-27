@@ -480,6 +480,7 @@ input[type="radio"].visually-hidden {
 
 .dot {
   display: inline-block;
+  vertical-align: middle;
   margin-right:28px;
 }
 
@@ -1549,6 +1550,7 @@ a.footer-login::before {
 .arrow::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   opacity: 0.2;
   margin-left: 2px;
   border: 12px solid black;
@@ -2030,6 +2032,7 @@ a.footer-login::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 428px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
