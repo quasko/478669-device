@@ -82,69 +82,46 @@ closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show");
 });
-/*
+
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
+    evt.preventDefault();
     if (popupMap.classList.contains("modal-show")) {
       popupMap.classList.remove("modal-show");
     }
   }
-});*/
+});
 
 var sliders = document.querySelectorAll(".slider-item");
-var slidersNav = document.querySelectorAll(".slider-checkbox");
-
-slidersNav[0].addEventListener("click", function(){
-  for(var j = 0; j < sliders.length; j++) {
-    sliders[j].classList.remove("slider-show");
+var slidersNav = document.querySelector(".slider-nav");
+slidersNav.addEventListener("click",function(evt){
+  var target = evt.target;
+  if(target.classList.contains("slider-checkbox")) {
+    var slideNum = target.id.split('-')[1];
+    console.log(slideNum);
+    for(var j = 0; j < sliders.length; j++) {
+      sliders[j].classList.remove("slider-show");
+    }
+    sliders[slideNum-1].classList.add("slider-show");
   }
-  sliders[0].classList.add("slider-show");
-});
-
-slidersNav[1].addEventListener("click", function(){
-  for(var j = 0; j < sliders.length; j++) {
-    sliders[j].classList.remove("slider-show");
-  }
-  sliders[1].classList.add("slider-show");
-});
-
-slidersNav[2].addEventListener("click", function(){
-  for(var j = 0; j < sliders.length; j++) {
-    sliders[j].classList.remove("slider-show");
-  }
-  sliders[2].classList.add("slider-show");
 });
 
 var services = document.querySelectorAll(".services-description > div");
-var servicesNav = document.querySelectorAll(".services-tab");
+var servicesNav = document.querySelector(".services-nav");
+var servicesTab = document.querySelectorAll(".services-tab");
 
-servicesNav[0].addEventListener("click", function(evt){
+servicesNav.addEventListener("click",function(evt){
   evt.preventDefault();
-  for(var j = 0; j < sliders.length; j++) {
-    services[j].classList.remove("service-show");
-    servicesNav[j].classList.remove("current");
+  var target = evt.target;
+  if(target.classList.contains("services-link")) {
+    var parentLi = target.parentElement;
+      for(var j = 0; j < services.length; j++) {
+        services[j].classList.remove("service-show");
+        servicesTab[j].classList.remove("current");
+      }
+      var serviceDescriptionSelector = ".services-description-" + target.id.split('-')[0];
+      var serviceDescriptionBlock = document.querySelector(serviceDescriptionSelector);
+      serviceDescriptionBlock.classList.add("service-show");
+      parentLi.classList.add("current");
   }
-  services[0].classList.add("service-show");
-  servicesNav[0].classList.add("current");
-});
-
-servicesNav[1].addEventListener("click", function(evt){
-  evt.preventDefault();
-  for(var j = 0; j < sliders.length; j++) {
-    services[j].classList.remove("service-show");
-    servicesNav[j].classList.remove("current");
-  }
-  services[1].classList.add("service-show");
-  servicesNav[1].classList.add("current");
-});
-
-servicesNav[2].addEventListener("click", function(evt){
-  evt.preventDefault();
-  for(var j = 0; j < sliders.length; j++) {
-    services[j].classList.remove("service-show");
-    servicesNav[j].classList.remove("current");
-  }
-  services[2].classList.add("service-show");
-  servicesNav[2].classList.add("current");
 });
