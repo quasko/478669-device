@@ -82,7 +82,7 @@ closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show");
 });
-
+/*
 window.addEventListener("keydown", function (evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
@@ -90,7 +90,7 @@ window.addEventListener("keydown", function (evt) {
       popupMap.classList.remove("modal-show");
     }
   }
-});
+});*/
 
 var sliders = document.querySelectorAll(".slider-item");
 var slidersNav = document.querySelectorAll(".slider-checkbox");
