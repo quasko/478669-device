@@ -82,15 +82,23 @@ closeMap.addEventListener("click", function (evt) {
 
 var sliders = document.querySelectorAll(".slider-item");
 var slidersNav = document.querySelector(".slider-nav");
+var activeSlider = document.querySelector(".slider-show");
+var sliderLinkWrapper = activeSlider.querySelector(".slider-link-wrapper");
+document.querySelector(".slider-nav").remove;
+sliderLinkWrapper.appendChild(slidersNav);
+
 slidersNav.addEventListener("click",function(evt){
   var target = evt.target;
   if(target.classList.contains("slider-checkbox")) {
+    document.querySelector(".slider-nav").remove();
     var slideNum = target.id.split('-')[1];
-    console.log(slideNum);
     for(var j = 0; j < sliders.length; j++) {
       sliders[j].classList.remove("slider-show");
     }
     sliders[slideNum-1].classList.add("slider-show");
+    activeSlider = sliders[slideNum-1];
+    sliderLinkWrapper = activeSlider.querySelector(".slider-link-wrapper");
+    sliderLinkWrapper.appendChild(slidersNav);
   }
 });
 

@@ -1940,6 +1940,16 @@ a.footer-login::before {
   width: 220px;
 }
 
+.slider-link-wrapper {
+  position: relative;
+}
+
+.slider-link-wrapper .slider-nav {
+  position: absolute;
+  right: 93px;
+  top: 0;
+}
+
 .categories {
   margin-bottom: 67px;
 }
