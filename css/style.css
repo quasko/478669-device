@@ -64,6 +64,8 @@ input[type="radio"].visually-hidden {
 .button {
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
+  padding: 8px 35px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -509,6 +511,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-button.svg");
 }
 
+.slider-checkbox:focus + label::before {
+  outline: 1px dotted #212121;
+  outline: -webkit-focus-ring-color auto 5px;
+}
 
 .slider-title {
   position: relative;
@@ -1437,6 +1443,7 @@ a.footer-login::before {
 .filter-form input[type="radio"]:focus + label::before {
   outline: -webkit-focus-ring-color auto 5px;
   outline-offset: -2px;
+  outline: 1px dotted #212121;
 }
 
 .filter-input + label:hover::before {
