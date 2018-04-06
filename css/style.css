@@ -1484,6 +1484,8 @@ a.footer-login::before {
 }
 
 .price-controls .bar {
+  position: absolute;
+  left: 0;
   width: 60%;
   height: 2px;
   background: #91c92f;
